@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --cyan: #12e1b9;
+    --background: #070d29;
+}
+
+@font-face {
+    font-family: "Neue Machina";
+    src: url("/resources/fonts/PPNeueMachina-PlainRegular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: "Neue Machina", sans-serif;
+    font-weight: 800;
+    margin: 0;
+}
+
+p {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+header {
+    padding: 20px;
+    background-color: var(--background);
+    height: 80px;
+    align-content: center;
+}
+.navlinks {
+    color: var(--cyan);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.leftlinks {
+    display: flex;
+    gap: 10px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: white;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 92dvh;
+    padding-left: 50px; 
+    background-image: url("/resources/images/blurred-cell.png");
+}
+
+.hero-content{
+    width: 50dvh;
+    display: block;
+}
+
+.horizontal-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.rect-button {
+    flex: 1;
+    outline: 2px solid var(--cyan);
+    padding: 10px;
+}
+
+.center-button {
+    display: block;
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cyan);
+}
